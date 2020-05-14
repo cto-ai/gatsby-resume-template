@@ -2,7 +2,7 @@
 
 Gatsby.js V2 starter template based on [gatsby-starter-resume](https://github.com/anubhavsrivastava/gatsby-starter-resume).
 
-Check online preview [here](https://cto-ai.github.io/gatsby-resume/).
+Check online preview [here](https://cto-ai.github.io/gatsby-resume-template/).
 
 ## Screenshot
 
