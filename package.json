@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-resume",
   "version": "0.0.1",
-  "description": "CTP.ai Gatsby.js Resume starter template",
+  "description": "CTO.ai Gatsby.js Resume starter template",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cto-ai/gatsby-resume-template.git"
