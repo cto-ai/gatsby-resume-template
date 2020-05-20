@@ -22,11 +22,9 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email} · </a>
             {config.address} · {config.phone}
           </div>
-          <p className="lead mb-5">
-            {config.bio}
-          </p>
+          <p className="lead mb-5">{config.bio}</p>
           <div className="social-icons">
-            {config.socialLinks.map(social => {
+            {config.socialLinks.map((social) => {
               const { icon, url } = social;
               return (
                 <a key={url} href={url}>
@@ -46,7 +44,7 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Experience</h2>
-          {config.experienceList.map(experience => {
+          {config.experienceList.map((experience) => {
             const { title, company, description, period } = experience;
             return (
               <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -73,8 +71,13 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Education</h2>
 
-          {config.educationList.map(education => {
-            const { institution, qualification, description, period } = education;
+          {config.educationList.map((education) => {
+            const {
+              institution,
+              qualification,
+              description,
+              period,
+            } = education;
             return (
               <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div className="resume-content">
@@ -104,7 +107,7 @@ const IndexPage = () => (
             Programming Languages &amp; Tools
           </div>
           <ul className="list-inline dev-icons">
-            {config.langTools.map(education => {
+            {config.langTools.map((education) => {
               const { iconClass } = education;
               return (
                 <li className="list-inline-item">
@@ -116,7 +119,7 @@ const IndexPage = () => (
 
           <div className="subheading mb-3">Other skills</div>
           <ul className="fa-ul mb-0">
-            {config.skills.map(skill => {
+            {config.skills.map((skill) => {
               return (
                 <li>
                   <i className="fa-li fa fa-check"></i>
@@ -136,34 +139,30 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Portfolio</h2>
-            {config.portfolio.introParagraphs.map(paragraph => {
-              return (
-                <p>
-                  {paragraph}
-                </p>
-              )
-            })}
+          {config.portfolio.introParagraphs.map((paragraph) => {
+            return <p>{paragraph}</p>;
+          })}
 
-            <div className="mb-5"></div>
+          <div className="mb-5"></div>
 
-            {config.portfolio.items.map(item => {
-              const { name, description, url } = item;
-              return (
-                <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div className="resume-content">
-                    <div className="subheading mb-3">{name}</div>
-                    <div>{description}</div>
-                  </div>
-                  <div className="resume-date text-md-right">
-                    <span className="text-primary portfolio-icons">
-                      <a key={url} href={url}>
-                        <i className={`fab fa-git-alt`}></i>
-                      </a>
-                    </span>
-                  </div>
+          {config.portfolio.items.map((item) => {
+            const { name, description, url } = item;
+            return (
+              <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div className="resume-content">
+                  <div className="subheading mb-3">{name}</div>
+                  <div>{description}</div>
                 </div>
-              );
-            })}
+                <div className="resume-date text-md-right">
+                  <span className="text-primary portfolio-icons">
+                    <a key={url} href={url}>
+                      <i className={`fab fa-git-alt`}></i>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -176,7 +175,7 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Certifications & Awards</h2>
           <ul className="fa-ul mb-0">
-            {config.certifications.map(certification => {
+            {config.certifications.map((certification) => {
               return (
                 <li>
                   <i className="fa-li fa fa-award text-warning"></i>
@@ -191,7 +190,10 @@ const IndexPage = () => (
     <div className="container w-100">
       <p className="text-center">
         <small className="d-lg-none d-xl-none">
-          Generated with the <a href={`${config.footerUrl}`} className="">Ops Platform</a>
+          Generated with the{' '}
+          <a href={`${config.footerUrl}`} className="">
+            Ops Platform
+          </a>
         </small>
       </p>
     </div>

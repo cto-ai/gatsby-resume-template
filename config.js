@@ -1,19 +1,19 @@
-const REPOSITORY = 'gatsby-resume-template'
-const FIRST_NAME = 'Jane'
-const LAST_NAME = 'Doe'
-const GITHUB_USERNAME = 'awesome-developer'
-const TWITTER_USERNAME = 'awesome-developer'
-const LINKEDIN_USERNAME = 'awesome-developer'
-const PHONE_NUMBER = '604-XXX-XXXX'
-const ADDRESS = 'Vancouver'
-const EMAIL = 'jane.doe@email.com'
-const FOOTER_URL = 'https://www.cto.ai'
+const REPOSITORY = 'gatsby-resume-template';
+const FIRST_NAME = 'Jane';
+const LAST_NAME = 'Doe';
+const GITHUB_USERNAME = 'awesome-developer';
+const TWITTER_USERNAME = 'awesome-developer';
+const LINKEDIN_USERNAME = 'awesome-developer';
+const PHONE_NUMBER = '604-XXX-XXXX';
+const ADDRESS = 'Vancouver';
+const EMAIL = 'jane.doe@email.com';
+const FOOTER_URL = 'https://www.cto.ai';
 
 const BIO = `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`;
 
 const EXPERIENCE_LIST = [
   {
@@ -24,7 +24,7 @@ const EXPERIENCE_LIST = [
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`,
-    period: 'January 2019 - present'
+    period: 'January 2019 - present',
   },
   {
     title: 'Title 2',
@@ -34,7 +34,7 @@ const EXPERIENCE_LIST = [
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`,
-    period: 'April 2018 - January 2019'
+    period: 'April 2018 - January 2019',
   },
   {
     title: 'Title 3',
@@ -44,9 +44,9 @@ const EXPERIENCE_LIST = [
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`,
-    period: 'December 2015 - April 2018'
-  }
-]
+    period: 'December 2015 - April 2018',
+  },
+];
 
 const EDUCATION_LIST = [
   {
@@ -55,7 +55,7 @@ const EDUCATION_LIST = [
     description: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    period: '2015'
+    period: '2015',
   },
   {
     institution: 'Institution 2',
@@ -63,9 +63,9 @@ const EDUCATION_LIST = [
     description: `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    period: '2012'
-  }
-]
+    period: '2012',
+  },
+];
 
 const LANGUAGES_AND_TOOLS = [
   { name: 'HTML5', iconClass: 'fa-html5' },
@@ -81,44 +81,40 @@ const LANGUAGES_AND_TOOLS = [
   { name: 'Grunt', iconClass: 'fa-grunt' },
   { name: 'NPM', iconClass: 'fa-npm' },
   { name: 'R', iconClass: 'fa-r-project' },
-]
+];
 
-const SKILLS = [
-  'Skill 1',
-  'Skill 2',
-  'Skill 3',
-  'Skill 4',
-  'Skill 5',
-]
+const SKILLS = ['Skill 1', 'Skill 2', 'Skill 3', 'Skill 4', 'Skill 5'];
 
 const PORTFOLIO = {
-  'introParagraphs': [
+  introParagraphs: [
     `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     `Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`
+     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.`,
   ],
-  'items': [
+  items: [
     {
-      'name': 'First portfolio item',
-      'description': 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-      'url': 'https://github.com/user/repo'
+      name: 'First portfolio item',
+      description:
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+      url: 'https://github.com/user/repo',
     },
     {
-      'name': 'Second portoflio item name',
-      'description': 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-      'url': 'https://github.com/user/repo'
-    }
-  ]
-}
+      name: 'Second portoflio item name',
+      description:
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+      url: 'https://github.com/user/repo',
+    },
+  ],
+};
 
 const CERTIFICATIONS = [
   'Certification 1',
   'Certification 2',
   'Certification 3',
   'Award 1',
-  'Award 2'
-]
+  'Award 2',
+];
 
 module.exports = {
   siteTitle: `${FIRST_NAME} ${LAST_NAME} Resume`, // <title>
@@ -162,10 +158,10 @@ module.exports = {
       icon: 'fa-twitter',
       name: 'Twitter',
       url: `https://twitter.com/${TWITTER_USERNAME}`,
-    }
+    },
   ],
   email: EMAIL,
   phone: PHONE_NUMBER,
   address: ADDRESS,
-  footerUrl: FOOTER_URL
+  footerUrl: FOOTER_URL,
 };

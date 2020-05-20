@@ -52,7 +52,7 @@ export class Sidebar extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Scrollspy
-            items={tabs.map(s => s.href)}
+            items={tabs.map((s) => s.href)}
             currentClassName="active"
             offset={-300}
             className="navbar-nav"
@@ -72,7 +72,13 @@ export class Sidebar extends Component {
           </Scrollspy>
         </div>
         <small className="d-none d-lg-block text-white">
-          Generated with the <a href={`${config.footerUrl}`} className="text-light sidebar-footer-link">Ops Platform</a>
+          Generated with the{' '}
+          <a
+            href={`${config.footerUrl}`}
+            className="text-light sidebar-footer-link"
+          >
+            Ops Platform
+          </a>
         </small>
       </nav>
     );
