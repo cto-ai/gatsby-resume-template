@@ -32,7 +32,7 @@ gatsby develop
 
 ### Personalization
 
-Edit `config.js` to put up your details
+Edit `config.js` with your details:
 
 ```javascript
 const REPOSITORY = 'resume'
@@ -65,7 +65,7 @@ const CERTIFICATIONS = ...
 
 `package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on Github Pages.
 
-Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js` as `REPOSITORY`. Change `REPOSITORY` to relevant path if your gatsby site is hosted on subpath of a domain, `https://domain.com/somePath/`. If you are hosting it as root site, i.e, `https://domain.com/` , remove the `pathPrefix` configuration entirely.
+Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js` as `REPOSITORY`. Change `REPOSITORY` to relevant path if your gatsby site is hosted on subpath of a domain, `https://domain.com/somePath/`. If you are hosting it as root site, i.e, `https://domain.com/` , remove the `pathPrefix` configuration entirely or set it an empty string.
 
 The present project leverages [Github Actions](./.github/workflows/deploy.yml) for automated deployment to Github pages. Any push to the `master` branch will trigger the workflow that builds and pushes the built code to the `gh-pages`, triggering a deployment. In order for the deployment to work, it is necessary for the repository to be [configured correctly for Github Pages](https://help.github.com/en/enterprise/2.14/user/articles/configuring-a-publishing-source-for-github-pages), as well as for an `ACCESS_TOKEN` secret to be set up in the repository. To generate it, go to [Personal access tokens](https://github.com/settings/tokens) and create a new token with the `repo` scope enabled.
 
